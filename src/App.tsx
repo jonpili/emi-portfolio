@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from './organisms/Header';
+import FirstView from './pages/FirstView';
+import Profile from './pages/Profile';
+import JobWorks from './pages/JobWorks';
+import HobbyWorks from './pages/HobbyWorks';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <header>
+          <Header />
+        </header>
+        <main>
+          <FirstView />
+          <Profile />
+          <JobWorks />
+          <HobbyWorks />
+        </main>
+      </div>
+    );
+  }
 }
 
 export default App;
