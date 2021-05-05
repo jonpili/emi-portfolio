@@ -7,18 +7,24 @@ import Profile from './pages/Profile';
 import JobWorks from './pages/JobWorks';
 import HobbyWorks from './pages/HobbyWorks';
 
+import { Container } from '@material-ui/core';
+
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <header>
-          <Header />
+      <div className='app__container'>
+        <header className='app__header'>
+          <Container>
+            <Header />
+          </Container>
         </header>
-        <main>
-          <FirstView />
-          <Profile />
-          <JobWorks />
-          <HobbyWorks />
+        <main className='app__main'>
+          <Container>
+            <FirstView />
+            <Profile />
+            <JobWorks />
+            <HobbyWorks />
+          </Container>
         </main>
       </div>
     );
