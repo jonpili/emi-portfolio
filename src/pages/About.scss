@@ -7,4 +7,16 @@
     max-width: 960px;
     margin: 0 auto;
   }
+
+  &__profileContents {
+    display: flex;
+  }
+
+  &__profileImage {
+    border-radius: 8px;
+  }
+
+  &__profileText {
+    padding: 20px;
+  }
 }
