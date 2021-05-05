@@ -5,7 +5,7 @@ import Header from './organisms/Header';
 import FirstView from './pages/FirstView';
 import Profile from './pages/Profile';
 import PreviousWorks from './pages/PreviousWorks';
-import HobbyWorks from './pages/HobbyWorks';
+import Hobby from './pages/Hobby';
 
 import { Container } from '@material-ui/core';
 
@@ -23,7 +23,7 @@ class App extends React.Component {
             <FirstView />
             <Profile />
             <PreviousWorks />
-            <HobbyWorks />
+            <Hobby />
           </Container>
         </main>
       </div>
