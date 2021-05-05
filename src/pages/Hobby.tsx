@@ -1,6 +1,8 @@
 import React from 'react';
 import './Hobby.scss';
 
+import Title from '../organisms/Title';
+
 import { GridList, GridListTile } from '@material-ui/core';
 
 type Tile = {
@@ -36,10 +38,7 @@ export default class Hobby extends React.Component<Props, State> {
   render() {
     return (
       <div className='hobby__container'>
-        <div className='hobby__title'>
-          <p className='hobby__mainTitle'>趣味作品</p>
-          <p className='hobby__subTitle'>Hobby</p>
-        </div>
+        <Title main="趣味作品" sub="Hobby" />
         <div className='hobby__contents'>
           <GridList cellHeight={240} cols={4}>
             {this.state.tileData.map((tile: Tile) => (
