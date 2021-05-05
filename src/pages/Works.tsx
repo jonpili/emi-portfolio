@@ -1,7 +1,7 @@
 import React from 'react';
 import './Works.scss';
 
-import Title from '../organisms/Title';
+import SectionTitle from '../molecules/SectionTitle';
 
 import { GridList, GridListTile } from '@material-ui/core';
 
@@ -38,7 +38,7 @@ export default class Works extends React.Component<Props, State> {
   render() {
     return (
       <div className='works__container'>
-        <Title main="制作実績" sub="Works" />
+        <SectionTitle main="制作実績" sub="Works" />
         <div className='works__contents'>
           <GridList cellHeight={240} cols={4}>
             {this.state.tileData.map((tile: Tile) => (
