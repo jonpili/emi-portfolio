@@ -3,7 +3,7 @@ import './SectionTitle.scss';
 
 type Props = {
   main: string
-  sub: string
+  sub?: string
 }
 
 export default class SectionTitle extends React.Component<Props> {

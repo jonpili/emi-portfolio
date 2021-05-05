@@ -38,7 +38,7 @@ export default class Works extends React.Component<Props, State> {
   render() {
     return (
       <div className='works__container'>
-        <SectionTitle main="制作実績" sub="Works" />
+        <SectionTitle main="Works" />
         <div className='works__contents'>
           <GridList cellHeight={240} cols={4}>
             {this.state.tileData.map((tile: Tile) => (
