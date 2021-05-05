@@ -10,7 +10,9 @@ export default class Header extends React.Component {
         <Container maxWidth="md">
           <div className='header__contents'>
             <div className='header__logo'>
-              <img src="https://material-ui.com/static/images/grid-list/olive.jpg" alt="olive" width="60px" height="60px" />
+              <Link href="#">
+                <img src="https://material-ui.com/static/images/grid-list/olive.jpg" alt="olive" width="60px" height="60px" />
+              </Link>
             </div>
             <div className='header__links'>
               <Link href="#about"><div className='header__link'>About</div></Link>
