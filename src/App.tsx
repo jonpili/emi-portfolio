@@ -4,7 +4,7 @@ import './App.scss';
 import Header from './organisms/Header';
 import FirstView from './pages/FirstView';
 import Profile from './pages/Profile';
-import PreviousWorks from './pages/PreviousWorks';
+import Works from './pages/Works';
 import Hobby from './pages/Hobby';
 
 import { Container } from '@material-ui/core';
@@ -22,7 +22,7 @@ class App extends React.Component {
           <Container>
             <FirstView />
             <Profile />
-            <PreviousWorks />
+            <Works />
             <Hobby />
           </Container>
         </main>
