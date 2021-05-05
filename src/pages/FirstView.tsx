@@ -8,7 +8,7 @@ export default class FirstView extends React.Component {
     return (
       <div id="first-view" className='firstView__container'>
         <Container maxWidth="md">
-          <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="olive" width="960px"/>
+          <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="olive" width="100%"/>
         </Container>
       </div>
     );

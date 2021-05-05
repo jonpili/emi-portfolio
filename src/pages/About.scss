@@ -1,6 +1,6 @@
 .about {
   &__container {
-    padding: 40px;
+    padding-top: 60px;
   }
 
   &__contents {
@@ -10,13 +10,24 @@
 
   &__profileContents {
     display: flex;
+    @media screen and (max-width: 599px) {
+      flex-direction: column;
+    }
   }
 
   &__profileImage {
-    border-radius: 8px;
+    max-width: 480px;
+    @media screen and (max-width: 599px) {
+      margin: 0 auto;
+    }
   }
 
   &__profileText {
-    padding: 20px;
+    @media screen and (min-width: 600px) {
+      margin-left: 20px;
+    }
+    @media screen and (max-width: 599px) {
+      margin-top: 20px;
+    }
   }
 }
