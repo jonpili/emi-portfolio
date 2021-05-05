@@ -3,7 +3,7 @@ import './App.scss';
 
 import Header from './organisms/Header';
 import FirstView from './pages/FirstView';
-import Profile from './pages/Profile';
+import About from './pages/About';
 import Works from './pages/Works';
 import Hobby from './pages/Hobby';
 
@@ -21,7 +21,7 @@ class App extends React.Component {
         <main className='app__main'>
           <Container>
             <FirstView />
-            <Profile />
+            <About />
             <Works />
             <Hobby />
           </Container>
