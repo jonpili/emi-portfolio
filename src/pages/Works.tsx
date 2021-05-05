@@ -37,7 +37,7 @@ export default class Works extends React.Component<Props, State> {
 
   render() {
     return (
-      <div className='works__container'>
+      <div id="works" className='works__container'>
         <SectionTitle main="Works" />
         <div className='works__contents'>
           <GridList cellHeight={240} cols={4}>

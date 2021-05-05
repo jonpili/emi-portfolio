@@ -14,9 +14,7 @@ class App extends React.Component {
     return (
       <div className='app__container'>
         <header className='app__header'>
-          <Container>
-            <Header />
-          </Container>
+          <Header />
         </header>
         <main className='app__main'>
           <Container>

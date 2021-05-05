@@ -7,7 +7,7 @@ import SubSectionTitle from '../molecules/SubSectionTitle';
 export default class About extends React.Component {
   render() {
     return (
-      <div className='about__container'>
+      <div id="about" className='about__container'>
         <SectionTitle main="About" />
         <div className='about__contents'>
           <div className='about__profile'>

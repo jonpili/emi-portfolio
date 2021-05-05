@@ -33,7 +33,7 @@ export default class Hobby extends React.Component<Props, State> {
 
   render() {
     return (
-      <div className='hobby__container'>
+      <div id="hobby" className='hobby__container'>
         <SectionTitle main="Hobby" />
         <div className='hobby__contents'>
           <GridList cellHeight={240} cols={4}>
