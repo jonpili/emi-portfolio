@@ -1,0 +1,7 @@
+.firstView {
+  &__container {
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+  }
+}
