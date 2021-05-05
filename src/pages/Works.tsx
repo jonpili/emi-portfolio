@@ -24,13 +24,13 @@ export default class Works extends React.Component<Props, State> {
     super(props);
     this.state = {
       tileData: [
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive1', cols: 2, rows: 2 },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive2', rows: 2 },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive3', rows: 2 },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive4' },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive5' },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive6' },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive7' },
+        { img: `${process.env.PUBLIC_URL}/no-image.png`, title: 'nothing1', cols: 2, rows: 2 },
+        { img: `${process.env.PUBLIC_URL}/no-image.png`, title: 'nothing2', rows: 2 },
+        { img: `${process.env.PUBLIC_URL}/no-image.png`, title: 'nothing3', rows: 2 },
+        { img: `${process.env.PUBLIC_URL}/no-image.png`, title: 'nothing4' },
+        { img: `${process.env.PUBLIC_URL}/no-image.png`, title: 'nothing5' },
+        { img: `${process.env.PUBLIC_URL}/no-image.png`, title: 'nothing6' },
+        { img: `${process.env.PUBLIC_URL}/no-image.png`, title: 'nothing7' },
       ]
     };
   }

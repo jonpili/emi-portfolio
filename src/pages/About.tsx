@@ -17,7 +17,7 @@ export default class About extends React.Component {
               <SubSectionTitle main="Profile" />
               <div className='about__profileContents'>
                 <div className='about__profileImage'>
-                  <img src="https://material-ui.com/static/images/grid-list/olive.jpg" alt="olive" width="100%" />
+                  <img src={`${process.env.PUBLIC_URL}/no-image.png`} alt="nothing" width="100%" />
                 </div>
                 <div className='about__profileText'>
                   <p>自己紹介文<br /><br />自己紹介文<br /><br />自己紹介文<br /><br />自己紹介文</p>

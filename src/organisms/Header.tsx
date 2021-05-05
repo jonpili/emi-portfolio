@@ -11,7 +11,7 @@ export default class Header extends React.Component {
           <div className='header__contents'>
             <div className='header__logo'>
               <Link href="#">
-                <img src="https://material-ui.com/static/images/grid-list/olive.jpg" alt="olive" width="60px" height="60px" />
+                <img src={`${process.env.PUBLIC_URL}/no-image.png`} alt="nothing" width="60px" height="60px" />
               </Link>
             </div>
             <div className='header__links'>

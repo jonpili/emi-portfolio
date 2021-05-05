@@ -16,8 +16,9 @@
   }
 
   &__profileImage {
-    max-width: 480px;
+    max-width: 240px;
     @media screen and (max-width: 599px) {
+      max-width: 100%;
       margin: 0 auto;
     }
   }

@@ -24,9 +24,9 @@ export default class Hobby extends React.Component<Props, State> {
     super(props);
     this.state = {
       tileData: [
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive1', cols: 2, rows: 2 },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive2', rows: 2 },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive3', rows: 2 },
+        { img: `${process.env.PUBLIC_URL}/no-image.png`, title: 'nothing1', cols: 2, rows: 2 },
+        { img: `${process.env.PUBLIC_URL}/no-image.png`, title: 'nothing2', rows: 2 },
+        { img: `${process.env.PUBLIC_URL}/no-image.png`, title: 'nothing3', rows: 2 },
       ]
     };
   }
