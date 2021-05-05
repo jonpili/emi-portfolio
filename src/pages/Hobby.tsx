@@ -1,9 +1,55 @@
 import React from 'react';
+import './Hobby.scss';
 
-export default class Hobby extends React.Component {
+import { GridList, GridListTile } from '@material-ui/core';
+
+type Tile = {
+  img: string
+  title: string
+  cols?: number
+  rows?: number
+}
+
+type Props = {
+}
+
+type State = {
+  tileData: Tile[]
+}
+
+export default class Hobby extends React.Component<Props, State> {
+  constructor(props: Props) {
+    super(props);
+    this.state = {
+      tileData: [
+        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive', cols: 2, rows: 2 },
+        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive', rows: 2 },
+        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive', rows: 2 },
+        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive' },
+        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive' },
+        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive' },
+        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive' },
+      ]
+    };
+  }
+
   render() {
     return (
-      <div>趣味作品だよ</div>
+      <div className='hobby__container'>
+        <div className='hobby__title'>
+          <p className='hobby__mainTitle'>趣味作品</p>
+          <p className='hobby__subTitle'>Hobby</p>
+        </div>
+        <div className='hobby__contents'>
+          <GridList cellHeight={240} cols={4}>
+            {this.state.tileData.map((tile: Tile) => (
+              <GridListTile key={tile.img} cols={tile.cols || 1} rows={tile.rows || 1}>
+                <img src={tile.img} alt={tile.title} />
+              </GridListTile>
+            ))}
+          </GridList>
+        </div>
+      </div>
     );
   }
 }
