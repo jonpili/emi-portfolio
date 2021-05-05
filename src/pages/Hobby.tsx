@@ -3,7 +3,7 @@ import './Hobby.scss';
 
 import SectionTitle from '../molecules/SectionTitle';
 
-import { GridList, GridListTile } from '@material-ui/core';
+import { GridList, GridListTile, GridListTileBar } from '@material-ui/core';
 
 type Tile = {
   img: string
@@ -40,6 +40,9 @@ export default class Hobby extends React.Component<Props, State> {
             {this.state.tileData.map((tile: Tile) => (
               <GridListTile key={tile.title} cols={tile.cols || 1} rows={tile.rows || 1}>
                 <img src={tile.img} alt={tile.title} />
+                <GridListTileBar
+                  title={tile.title}
+                />
               </GridListTile>
             ))}
           </GridList>
