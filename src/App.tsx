@@ -17,8 +17,8 @@ class App extends React.Component {
           <Header />
         </header>
         <main className='app__main'>
+          <FirstView />
           <Container>
-            <FirstView />
             <About />
             <Works />
             <Hobby />
