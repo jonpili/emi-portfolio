@@ -24,13 +24,9 @@ export default class Hobby extends React.Component<Props, State> {
     super(props);
     this.state = {
       tileData: [
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive', cols: 2, rows: 2 },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive', rows: 2 },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive', rows: 2 },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive' },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive' },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive' },
-        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive' },
+        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive1', cols: 2, rows: 2 },
+        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive2', rows: 2 },
+        { img: 'https://material-ui.com/static/images/grid-list/olive.jpg', title: 'olive3', rows: 2 },
       ]
     };
   }
@@ -42,7 +38,7 @@ export default class Hobby extends React.Component<Props, State> {
         <div className='hobby__contents'>
           <GridList cellHeight={240} cols={4}>
             {this.state.tileData.map((tile: Tile) => (
-              <GridListTile key={tile.img} cols={tile.cols || 1} rows={tile.rows || 1}>
+              <GridListTile key={tile.title} cols={tile.cols || 1} rows={tile.rows || 1}>
                 <img src={tile.img} alt={tile.title} />
               </GridListTile>
             ))}
